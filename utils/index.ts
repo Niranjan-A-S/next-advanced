@@ -1,6 +1,6 @@
 import path from 'node:path';
 import fs from 'node:fs/promises';
-import { IProduct } from '@/pages/[productId]';
+import { IProduct } from '@/pages/products/[productId]';
 
 export const getProducts = async (): Promise<IProduct[]> => {
     const filePath = path.join(process.cwd(), 'data', 'dummy-data.json');
